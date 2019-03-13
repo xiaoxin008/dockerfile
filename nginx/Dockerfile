@@ -3,8 +3,6 @@ LABEL maintainer="xiaoxin008 <wangfangxin01@163.com>"
 
 ENV NGINX_DOC_ROOT='/data/web/html/'
 
-WORKDIR ./
-
 ADD index.html ${NGINX_DOC_ROOT}
 ADD init.sh /bin/
 
