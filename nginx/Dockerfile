@@ -6,7 +6,7 @@ ENV NGINX_DOC_ROOT='/data/web/html/'
 ADD index.html ${NGINX_DOC_ROOT}
 ADD init.sh /bin/
 
-RUN chmod 777 /bin/init.sh
+RUN chmod +x /bin/init.sh
 
 EXPOSE 80/tcp
 
