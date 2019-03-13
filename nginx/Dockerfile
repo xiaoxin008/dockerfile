@@ -12,6 +12,6 @@ EXPOSE 80/tcp
 
 HEALTHCHECK --start-period=3s CMD wget -o - -q http://${IP:-0.0.0.0}/
 
-CMD ["/user/sbin/nginx","-g","daemon off;"]
+CMD ["/usr/sbin/nginx","-g","daemon off;"]
 
 ENTRYPOINT ["/bin/init.sh"]
